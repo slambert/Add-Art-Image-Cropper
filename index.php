@@ -107,7 +107,9 @@ if(isset($_FILES[$upload_name])) {
 	}
 }
 
-?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+// XHTML PAGE BEGINS BELOW
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head>
 <title>Upload Image</title>
@@ -118,20 +120,20 @@ if(isset($_FILES[$upload_name])) {
 
 </head>
 <body>
-		<div style="margin-left: auto; margin-right: auto; width: 800px;">
+		<div id="header">
 		<!-- SWFUpload interfaz -->
 		<? if($Error) echo $Error.'<br/>'; ?>
-		<div>
-			<form id="form1" action="index.php" method="post" enctype="multipart/form-data" style="margin-left: auto; margin-right: auto; width: 800px;">
-				<div>
-				<label for="Filedata" style="display: inline; clear:none;">Upload Image File: </label><input type="file" name="Filedata" value="" id="Filedata" style="display: inline; clear:none;">
-				</div>
-				<div>
-				<label for="setname" style="display: inline; clear:none;">Image Set Name: </label><input type="text" name="setname" value="MyExhibit" id="setname" style="display: inline; clear:none;">
-				</div>
-				<input type="submit" name="submit" value="Submit" id="submit" style="margin-left: auto; margin-right: auto; text-align: center;">
-			</form>
-		</div>
-		</div>
+			<div class="sfwu-forms">
+				<form id="form1" action="index.php" method="post" enctype="multipart/form-data">
+					<div>
+					<label for="Filedata">Upload Image File: </label><input type="file" name="Filedata" value="" id="Filedata">
+					</div>
+					<div>
+					<label for="setname" >Image Set Name: </label><input type="text" name="setname" value="MyExhibit" id="setname">
+					</div>
+					<input type="submit" name="submit" value="Submit" id="submit">
+				</form>
+			</div><!-- .sfwu-forms-->
+		</div><!-- #header -->
 </body>
 </html>

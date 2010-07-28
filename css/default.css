@@ -121,37 +121,29 @@ code {
 
 /* -- Layout ------------------------------- */
 
+body {
+	margin-left: 5%; 
+	margin-right: 5%; 
+	width: 90%; 
+	text-align: center;
+}
+
 
 #header {
-	background: #313131 url(../images/header-bg.jpg) repeat-x top left;
-	height: 125px;
+	background-color: #333333;
+	background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#333));
+	background: -moz-linear-gradient(top,  #333333,  #000);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#000');
+	height: auto;
 	position: relative;
+	color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	-moz-border-radius-bottomleft : 15px;
+	-webkit-border-bottom-left-radius : 15px;
+	-moz-border-radius-bottomright : 15px;
+	-webkit-border-bottom-right-radius : 15px;
 }
-	#logo { 
-		padding: 0;
-		margin: 0;
-		background: url(../images/logo.gif) no-repeat 20px 20px;
-		height: 106px;
-		width: 272px;
-		text-indent: -5000px;
-		overflow: hidden;
-	}
-	/* hide link text */
-	#logo a {
-		display: block;
-		color: #fff;
-		text-indent: -5000px;
-		overflow: hidden;
-		height: 106px;
-		width: 272px;
-	}
-	
-	#version {
-		color: #fff;
-		position: absolute;
-		right: 20px;
-		top: 85px;
-	}
 
 
 #content { width: 680px;}
@@ -161,11 +153,23 @@ code {
 
 
 /* -- Form Styles ------------------------------- */
+
+div.sfwu-forms {
+	width: 680px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 form {	
 	margin: 0;
 	padding: 0;
+	display: inline;
+	clear: none;
 }
 
+#Filedata {
+	color: #9bd4fe;
+}
 
 
 div.fieldset {
@@ -209,9 +213,31 @@ textarea {
 #btnSubmit { margin: 0 0 0 155px ; }
 
 /* -- Table Styles ------------------------------- */
-td {
+
+table#imagelist {
+	width: 200px;
+	background-color: black;
+	color: white;
+	position: absolute;
+	top: 150px;
+	opacity: 0.6;
+	text-shadow: black 0 1px 1px;
+	left: 5%;
+}
+
+table#imagelist th {
+	font-weight: bold;
+	border-bottom: 2px solid #fff;
+	text-transform: uppercase;
+	padding: 5px;
+}
+
+table#imagelist td {
 	font: 10pt Helvetica, Arial, sans-serif;
 	vertical-align: top;
+	padding: 5px 5px 5px 15px;
+	border-bottom: 1px dashed #fff;
+	text-align: left;
 }
 
 .progressWrapper {
