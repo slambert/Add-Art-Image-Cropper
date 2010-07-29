@@ -1,6 +1,5 @@
 //object to define the sizes that will be available.
 var sizes = {
-	"88x31":{"w":88,"h":31},
 	"120x240":{"w":120,"h":240},
 	"120x600":{"w":120,"h":600},
 	"125x125":{"w":125,"h":125},
@@ -16,7 +15,8 @@ var sizes = {
 	"336x280":{"w":336,"h":280},
 	"392x72":{"w":392,"h":72},
 	"468x60":{"w":468,"h":60},
-	"728x90":{"w":728,"h":90}	
+	"728x90":{"w":728,"h":90},		
+	"88x31":{"w":88,"h":31}
 };
 // var to limit the size of the image preview.
 var maxSize = 180;
