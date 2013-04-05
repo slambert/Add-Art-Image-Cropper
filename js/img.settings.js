@@ -18,22 +18,13 @@ var sizes = {
 	//Buttons
 	"120x90":{"w":120,"h":90},
 	"120x60":{"w":120,"h":60},
-<<<<<<< HEAD
-	"88x31":{"w":88,"h":31}
-	"88x15":{"w":88,"h":15}
-=======
 	"88x31":{"w":88,"h":31},
 	"88x15":{"w":88,"h":15},
->>>>>>> updating crop sizes to current Add-Art specs 
 	"125x125":{"w":125,"h":125},
 	//Skyscrapers
 	"120x600":{"w":120,"h":600},
 	"160x600":{"w":160,"h":600},
-<<<<<<< HEAD
-	"300x600":{"w":300,"h":600},
-=======
 	"300x600":{"w":300,"h":600}
->>>>>>> updating crop sizes to current Add-Art specs 
 };
 // var to limit the size of the image preview.
 var maxSize = 180;
