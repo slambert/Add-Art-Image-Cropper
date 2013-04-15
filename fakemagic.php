@@ -47,7 +47,7 @@ class Imagick {
 	
 	public function resizeImageWithQuadraticFilter($NewWidth, $NewHeight) {
 		$location='/usr/bin/mogrify';
-		$geometry = $Width.'x'.$Height;
+		$geometry = $NewWidth.'x'.$NewHeight;
       $convert=$location . ' -adaptive-resize ' . $geometry . ' -filter Quadratic ' . escapeshellarg($this->tempPath);
       exec ($convert);
 		return true;
