@@ -117,8 +117,19 @@ $(window).load(function () {
 		(function(){ jQuery('img#editing').bind('mouseout', function(event, ui){if(jQuery('table#imagelist').is(':hidden') == true){setTimeout(function(){var target = jQuery('table#imagelist'); target.show('slide', { direction: 'left' }, 250)}, 10)}});})();
 	})};
 </script>
+<script type="text/javascript">
+	/* ----- Hit Enter to crop ----- */
+	$(document).ready(function() {
+		$("#body").keyup(function(event){
+		    if(event.keyCode == 13){
+		        $("#save").click();
+		    }
+		});
+
+	});
+</script>
 </head>
-<body>
+<body id="body">
 	<div id="header">
 		<!-- list of availables sizes -->
 		<div class="sfwu-forms">
